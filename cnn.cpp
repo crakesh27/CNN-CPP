@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	n.add_layer(new FullyConnected(10));
 	n.add_layer(new Sigmoid());
 
-	n.train(inp, idim, isize, target, 5, 10, 0.5);
+	n.train(inp, idim, isize, target, 20, 10, 0.5);
 
 	free(isize);
 	free(osize);
